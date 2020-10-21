@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="6354" started-at="2020-10-20T08:11:56 PDT" finished-at="2020-10-20T08:12:03 PDT">
+  <suite name="Default suite" duration-ms="2958" started-at="2020-10-21T08:10:19 PDT" finished-at="2020-10-21T08:10:22 PDT">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="6354" started-at="2020-10-20T08:11:56 PDT" finished-at="2020-10-20T08:12:03 PDT">
-      <class name="MongoDBtest.MongoDbTest">
-        <test-method status="PASS" signature="setconnection()[pri:0, instance:MongoDBtest.MongoDbTest@2758fe70]" name="setconnection" is-config="true" duration-ms="6040" started-at="2020-10-20T08:11:56 PDT" finished-at="2020-10-20T08:12:02 PDT">
+    <test name="Default test" duration-ms="2958" started-at="2020-10-21T08:10:19 PDT" finished-at="2020-10-21T08:10:22 PDT">
+      <class name="MongoDBtest.MongoDbtest_02">
+        <test-method status="PASS" signature="setdbconnection()[pri:0, instance:MongoDBtest.MongoDbtest_02@79be0360]" name="setdbconnection" is-config="true" duration-ms="2735" started-at="2020-10-21T08:10:19 PDT" finished-at="2020-10-21T08:10:21 PDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setconnection -->
-        <test-method status="PASS" signature="Mongotest()[pri:0, instance:MongoDBtest.MongoDbTest@2758fe70]" name="Mongotest" duration-ms="227" started-at="2020-10-20T08:12:02 PDT" finished-at="2020-10-20T08:12:03 PDT">
+        </test-method> <!-- setdbconnection -->
+        <test-method status="PASS" signature="test_02()[pri:0, instance:MongoDBtest.MongoDbtest_02@79be0360]" name="test_02" duration-ms="124" started-at="2020-10-21T08:10:22 PDT" finished-at="2020-10-21T08:10:22 PDT">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Mongotest -->
-      </class> <!-- MongoDBtest.MongoDbTest -->
+        </test-method> <!-- test_02 -->
+      </class> <!-- MongoDBtest.MongoDbtest_02 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
