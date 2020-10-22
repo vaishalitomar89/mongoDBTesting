@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.List;
 
 import org.bson.Document;
@@ -78,7 +79,7 @@ public class MongoDbtest_02 {
 	     
 	       org.json.JSONArray value = new org.json.JSONArray( jsonArray.toJSONString());
 	       ArrayList<Document> list = new ArrayList<Document>();
-	     
+	  
 	       // inserting parsed json data into document
 	      for(int i=0;i<jsonArray.size();i++)
 	      {
@@ -112,13 +113,18 @@ public class MongoDbtest_02 {
 	     org.json.JSONArray value = new org.json.JSONArray( jsonArray.toJSONString());
 	     
 	     // Validating inserted data 
-		String id = value.getJSONObject(0).getString("ID");
-		String First_name = value.getJSONObject(0).getString("First_Name");
+	     String name;
+	    ArrayList arr = new ArrayList();
+	    FindIterable<Document> data = collection.find();
+	    MongoCursor<Document> it = data.iterator();
 	     
-		Assert.assertEquals(id,"1");
-	    Assert.assertEquals(First_name,"Shikhar");
-	     
-	    
+	    while(it.hasNext())
+	    {
+	    	 name = it.next().get("First_Name").toString();
+	    	 arr.add(name);
+	    }
+	   
+	    Assert.assertEquals(arr.get(0),"Shikhar");   
 	}
 
 }
